@@ -1,0 +1,4 @@
+fields @timestamp, @message, @logStream, @log
+| filter user.email = 'tanmay.saha@example.com'
+| sort @timestamp desc
+| limit 20
