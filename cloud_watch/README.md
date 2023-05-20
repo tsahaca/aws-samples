@@ -6,7 +6,7 @@
 git clone https://github.com/tsahaca/aws-samples.git
 cd cloud_watch
 ```
-2. get the current timestamp in milli seconds
+2. Get the current timestamp in milli seconds
 
 ```shell
 date +%s%3N
@@ -23,6 +23,7 @@ aws logs put-log-events --log-group-name greeting-app --log-stream-name my-local
 fields @timestamp, @message, @logStream, @log
 | filter user.email = 'tanmay.saha@example.com'
 | sort @timestamp desc
-| limit 20```
+| limit 20
+```
 
 ## [Structured Logging with Spring Boot and Amazon CloudWatch](https://reflectoring.io/struct-log-with-cloudwatch-tutorial/)
